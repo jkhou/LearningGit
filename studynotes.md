@@ -6,7 +6,7 @@
 ## Basic command lists
 
 ### 1.创建版本库
-> `git clone git@github.com:GitZzw/LearningGit`  克隆远程版本库
+> `git clone git@github.com:GitZzw/LearningGit.git`  克隆远程版本库
 > 
 ```
 mkdir DirName

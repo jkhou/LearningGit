@@ -127,7 +127,7 @@ touch README
 git add README 添加文件
 git commit -m 'first commit'
 git remote add origin git@github.com:daixu/WebApp.git
-git remote rm origin git@github.com:daixu/WebApp.git 取消绑定
+git remote rm origin  取消绑定
 ```
 
 

@@ -19,9 +19,10 @@
 ##### 克隆版本库指定分支：
 方法1：
 `git branch -a` 列出远程和本地所有分支
-`git checkout -b dev origin/dev`  checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
+`git checkout -b dev origin/dev`  
+checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
 
-
+方法2：
 > git clone -b branchname https://github.com/GitZzw/LearningGit.git   
 
 > 

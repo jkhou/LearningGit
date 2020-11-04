@@ -14,7 +14,16 @@
 [ssh](https://docs.github.com/cn/free-pro-team@latest/github/using-git/which-remote-url-should-i-use)要求必须在计算机上生成 SSH 密钥对，并将公钥添加到的 GitHub 帐户
 
 ### 1.创建版本库
-> `git clone git@github.com:GitZzw/LearningGit.git`  克隆远程版本库
+> `git clone git@github.com:GitZzw/LearningGit.git`  克隆远程版本库(master分支)
+
+##### 克隆版本库指定分支：
+方法1：
+`git branch -a` 列出远程和本地所有分支
+`git checkout -b dev origin/dev`  checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
+
+
+> git clone -b branchname https://github.com/GitZzw/LearningGit.git   
+
 > 
 ```
 mkdir DirName
@@ -87,7 +96,11 @@ git init
 
 > `git fetch <remote>`    从远程库获取代码 
 
-> `git pull <remote> <branch>`   下载代码以及快速合并 
+> `git pull <remote> <branch>`   下载代码以及快速合并
+
+> `git pull origin branch` pull指定origin的dev分支到当前目录
+
+> `git push origin dev`  push当前分支到origin的dev分支下
 
 > `git push <remote> <branch>`   上传代码以及快速合并 
 

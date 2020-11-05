@@ -106,6 +106,13 @@ git init
 > `git push <remote> <branch>`   上传代码以及快速合并 
 
 
+删除本地分支：git branch -d 分支名称
+
+强制删除本地分支：git branch -D 分支名称
+
+删除远程分支：git push origin --delete 分支名称
+
+
 ## git常用命令速查
 ```
 git branch 查看本地所有分支
@@ -162,8 +169,8 @@ git branch -m branch_0.1 branch_1.0 将branch_0.1重命名为branch_1.0
 git checkout branch_1.0/master 切换到branch_1.0/master分支
 du -hs
 
-git branch 删除远程branch
-git push origin :branch_remote_name
+git branch 
+删除远程branch：git push origin :branch_remote_name
 git branch -r -d branch_remote_name
 -----------------------------------------------------------
 

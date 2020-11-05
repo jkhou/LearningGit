@@ -6,6 +6,29 @@
 ## Basic command lists
 
 
+### 一些操作
+```
+git clone git@github.com:LearningGit.git
+git checkout -b dev
+vi text.txt
+git status
+git add text.txt
+git status
+git commit -m "add text file"
+git push origin dev (dev下执行,名字要对应)
+git checkout master 
+git diff master dev
+git diff master origin/dev
+git merge dev (git merge origin/dev)
+git diff master dev
+git branch 
+git branch -r 
+git branch -a
+git checkout -d dev
+git push origin --delete dev
+git branch -a 
+```
+
 ### 0.两种远程URL
 > https  
 
@@ -37,6 +60,28 @@ git init
 > `git status`     查看状态 
 
 > `git diff`       查看变更内容  
+
+
+![1090617-20181008211557402-232838726.png](https://i.loli.net/2020/11/05/KVDNvpd6TfaJhEi.png)
+
+
+```
+git diff：比较工作区与暂存区
+
+git diff --cached 或 git diff --staged：比较暂存区和本地分支的最近一次commit(本地版本库)
+
+git diff HEAD：显示工作目录(已track但未add文件)和暂存区(已add但未commit文件)与最后一次commit之间的的所有不相同文件的增删改。
+
+git diff HEAD~X或git diff HEAD^^^…(后面有X个^符号，X为正整数):可以查看最近一次提交的版本与往过去时间线前数X个的版本之间的所有同(3)中定义文件之间的增删改。
+
+git diff <分支名1> <分支名2> ：比较两个分支上最后 commit 的内容的差别
+
+git diff branch1 branch2 --stat    显示出所有有差异的文件(不详细,没有对比内容)
+
+git diff branch1 branch2              显示出所有有差异的文件的详细差异(更详细)
+
+git diff origin/master master
+```
 
 > `git add .`      跟踪所有改动过的文件 
 
